@@ -1,0 +1,14 @@
+﻿<svg width="1280" height="800" viewBox="0 0 1280 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" rx="40" fill="#0F0F0F"/>
+  <rect x="48" y="48" width="1184" height="704" rx="28" fill="#161616"/>
+  <rect x="94" y="108" width="336" height="520" rx="32" fill="#0B0B0B" stroke="#C8A96B" stroke-opacity="0.4"/>
+  <rect x="120" y="148" width="284" height="148" rx="20" fill="#242424"/>
+  <rect x="120" y="324" width="184" height="20" rx="10" fill="#C8A96B"/>
+  <rect x="120" y="362" width="244" height="16" rx="8" fill="#B7B0A4" fill-opacity="0.5"/>
+  <rect x="120" y="410" width="284" height="92" rx="18" fill="#1D1D1D"/>
+  <rect x="476" y="130" width="292" height="180" rx="24" fill="#1D1D1D"/>
+  <rect x="796" y="130" width="340" height="180" rx="24" fill="#1D1D1D"/>
+  <rect x="476" y="344" width="660" height="224" rx="24" fill="#1A1A1A"/>
+  <text x="478" y="640" fill="#F5F1E8" font-family="Arial, sans-serif" font-size="54" font-weight="700">Aqare Real Estate App</text>
+  <text x="478" y="686" fill="#B7B0A4" font-family="Arial, sans-serif" font-size="28">Replace with app screenshots or mockups</text>
+</svg>
