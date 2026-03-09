@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,21 +20,37 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="Primary navigation">
       <a class="brand" href="#home">Youssef Harby</a>
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="nav-menu"
-        aria-label="Toggle navigation menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+
+      <div class="nav-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch color theme"
+          title="Switch color theme"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Light</span>
+        </button>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
       <div class="nav-menu" id="nav-menu">
         <a href="#home">Home</a>
         <a href="#introduction">Introduction</a>
         <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#internship">Internship</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -60,15 +76,15 @@
           <ul class="hero-metrics" aria-label="Core strengths">
             <li>
               <strong>Kotlin</strong>
-              <span>Modern Android development</span>
+              <span>Android engineering with modern architecture</span>
             </li>
             <li>
-              <strong>Architecture</strong>
-              <span>Clean, scalable, maintainable systems</span>
+              <strong>Clean Delivery</strong>
+              <span>Reliable execution with maintainable code structure</span>
             </li>
             <li>
-              <strong>Delivery</strong>
-              <span>Reliable solutions with product focus</span>
+              <strong>Product Focus</strong>
+              <span>Solutions shaped around clarity, speed, and usability</span>
             </li>
           </ul>
         </div>
@@ -81,7 +97,10 @@
             >
             <div class="hero-card-details">
               <p class="hero-card-label">Developer Focus</p>
-              <p>Clean architecture, performance, and user-centered Android experiences.</p>
+              <p>
+                Android applications engineered for readability, scalability, and a smooth
+                user experience from first release to future iteration.
+              </p>
             </div>
           </div>
         </div>
@@ -92,7 +111,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="section-kicker">Introduction</p>
-          <h2>Engineering mobile products with clarity and structure.</h2>
+          <h2>Building Android products with structure, performance, and product clarity.</h2>
         </div>
         <div class="intro-layout">
           <div class="intro-copy reveal">
@@ -112,21 +131,21 @@
           <div class="intro-cards">
             <article class="info-card reveal">
               <p class="card-label">About Me</p>
-              <h3>Structured problem solving</h3>
+              <h3>Disciplined execution</h3>
               <p>
                 Android Developer with a strong focus on clean architecture, structured
                 problem-solving, and performance optimization. I build scalable mobile
-                applications that are maintainable, efficient, and aligned with real business
+                applications that stay maintainable, efficient, and aligned with real product
                 needs.
               </p>
             </article>
             <article class="info-card reveal">
               <p class="card-label">About Portfolio</p>
-              <h3>Selected work and case studies</h3>
+              <h3>Selected work with practical depth</h3>
               <p>
-                This portfolio showcases selected Android projects, case studies, and
-                real-world applications demonstrating my technical skills, architectural
-                thinking, and attention to user experience.
+                This portfolio presents selected Android and web projects that reflect my
+                technical foundations, architectural thinking, and attention to user
+                experience across real product scenarios.
               </p>
             </article>
           </div>
@@ -138,7 +157,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="section-kicker">About Me</p>
-          <h2>Built around thoughtful systems and practical product outcomes.</h2>
+          <h2>Focused on thoughtful systems, clear decisions, and durable implementation.</h2>
         </div>
         <div class="about-grid">
           <article class="vision-card reveal">
@@ -146,21 +165,18 @@
             <h3>Architecture that supports growth.</h3>
             <p>
               To build mobile applications that combine strong architecture with seamless user
-              experience creating products that are not only functional, but intelligently
+              experience, creating products that are not only functional, but intelligently
               engineered and built to scale.
             </p>
           </article>
           <div class="about-visual reveal">
             <div class="about-visual-panel">
-              <img
-              src="images/thiersdone.svg"
-              alt="Placeholder image representing the concept of 'architecture that supports growth' to be replaced with a personal or symbolic image"
-            >
+              <span>Replace this area with a branded visual, working setup, or product mockup.</span>
             </div>
           </div>
           <article class="vision-card reveal">
             <p class="card-label">My Mission</p>
-            <h3>Turning ideas into reliable Android solutions.</h3>
+            <h3>Turning complexity into dependable delivery.</h3>
             <p>
               To transform complex ideas into reliable Android solutions by applying clean
               architecture, modern development practices, and disciplined problem-solving.
@@ -170,44 +186,151 @@
       </div>
     </section>
 
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skills</p>
+          <h2>Technical capabilities supported by practical tools and strong collaboration.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <p class="card-label">Mobile Development</p>
+            <h3>Android delivery stack</h3>
+            <div class="tag-list">
+              <span>Android Development</span>
+              <span>Kotlin</span>
+              <span>XML</span>
+              <span>Firebase</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <p class="card-label">Programming Languages</p>
+            <h3>Languages I work with</h3>
+            <div class="tag-list">
+              <span>Kotlin</span>
+              <span>Java</span>
+              <span>C++</span>
+              <span>C#</span>
+              <span>Python</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <p class="card-label">Tools and Platforms</p>
+            <h3>Workflow and delivery tools</h3>
+            <div class="tag-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Android Studio</span>
+              <span>VS Code</span>
+              <span>Firebase</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <p class="card-label">UI/UX and Design</p>
+            <h3>Readable and usable interfaces</h3>
+            <div class="tag-list">
+              <span>Figma</span>
+              <span>UI/UX</span>
+              <span>Interface Hierarchy</span>
+              <span>Responsive Design</span>
+            </div>
+          </article>
+          <article class="skill-card reveal skill-card-wide">
+            <p class="card-label">Soft Skills</p>
+            <h3>How I work with teams and problems</h3>
+            <div class="tag-list">
+              <span>Problem Solving</span>
+              <span>Teamwork</span>
+              <span>Communication</span>
+              <span>Analytical Thinking</span>
+              <span>Ownership</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Education</p>
+          <h2>Academic foundation shaping my software mindset and engineering discipline.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="education-header">
+              <div>
+                <p class="card-label">University</p>
+                <h3>Assiut National University</h3>
+              </div>
+              <span class="date-pill">2022 - Expected 2026</span>
+            </div>
+            <div class="education-meta">
+              <p><strong>Faculty:</strong> Faculty of Computers, Information and Artificial Intelligence</p>
+              <p><strong>Major:</strong> Computer Science</p>
+            </div>
+            <p>
+              Building a strong academic base in software development, Android development,
+              and problem solving through coursework, technical practice, and continuous
+              hands-on application.
+            </p>
+          </article>
+          <aside class="education-side reveal">
+            <div class="mini-stat">
+              <span class="mini-stat-label">Academic Focus</span>
+              <strong>Software Engineering</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-label">Practical Interest</span>
+              <strong>Android Product Development</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-label">Core Strength</span>
+              <strong>Structured Problem Solving</strong>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="internship">
       <div class="container">
         <div class="section-heading reveal">
           <p class="section-kicker">Internship</p>
-          <h2>Training experiences that sharpened both technical depth and delivery mindset.</h2>
+          <h2>Hands-on training experiences that strengthened both product thinking and execution.</h2>
         </div>
         <div class="timeline">
           <article class="timeline-card reveal">
             <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="card-label">Experience 01</p>
-            <h3>DEPI - Android Mobile App Developer</h3>
-            <p>
-              Selected participant in the Digital Egypt Pioneers Initiative (DEPI) Android
-              Mobile App Development Track. The program focuses on building advanced Android
-              applications using Kotlin and Jetpack Compose, applying modern architecture
-              principles, clean code practices, mobile security, and version control with
-              Git and GitHub.
-            </p>
-            <p>
-              The journey includes hands-on projects, technical assessments, and a capstone
-              project to deliver scalable, production-ready solutions.
-            </p>
+            <div class="timeline-header">
+              <div>
+                <p class="card-label">Experience 01</p>
+                <h3>DEPI - Android Mobile App Developer</h3>
+              </div>
+              <span class="date-pill">2024</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Selected for the Digital Egypt Pioneers Initiative Android Mobile App Development Track.</li>
+              <li>Built practical experience with Kotlin, Jetpack Compose, mobile security practices, and Git/GitHub workflows.</li>
+              <li>Applied modern architecture principles and clean code standards through hands-on projects and technical assessments.</li>
+              <li>Contributed to capstone-oriented work focused on scalable, production-ready Android solutions.</li>
+            </ul>
           </article>
           <article class="timeline-card reveal">
             <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="card-label">Experience 02</p>
-            <h3>The Helpers Summer Camp</h3>
-            <p>
-              Completed a structured training journey with Helpers Community, where I deepened
-              my understanding of Object-Oriented Programming, Advanced C#, and clean coding
-              practices.
-            </p>
-            <p>
-              Through real-world projects, coding assessments, and weekly challenges, I
-              enhanced my ability to design scalable solutions and think analytically under
-              pressure. The camp also strengthened my communication, leadership, and teamwork
-              skills through continuous collaboration and presentations.
-            </p>
+            <div class="timeline-header">
+              <div>
+                <p class="card-label">Experience 02</p>
+                <h3>The Helpers Summer Camp</h3>
+              </div>
+              <span class="date-pill">Summer 2024</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Strengthened foundations in Object-Oriented Programming, Advanced C#, and clean coding practices.</li>
+              <li>Worked through real-world projects, weekly challenges, and coding assessments that improved solution design under pressure.</li>
+              <li>Practiced analytical thinking, structured implementation, and writing code with stronger readability and maintainability.</li>
+              <li>Gained practical experience in teamwork, communication, and presenting technical work in collaborative settings.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -268,29 +391,37 @@
               <p class="card-label">Android Case Study</p>
               <h3>Aqare Real Estate App</h3>
             </div>
-            <a class="button button-secondary" href="https://www.figma.com/design/uCg2pORbrEpID2Mcwn3tMB/UI-App--Aqari-?node-id=0-1&t=PliCBwy1LqUiXpIy-1" target="_blank" rel="noreferrer" aria-label="Placeholder Figma link for Aqare Real Estate App">View Figma</a>
+            <a
+              class="button button-secondary"
+              href="https://www.figma.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Placeholder Figma link for Aqare Real Estate App"
+            >
+              View Figma
+            </a>
           </div>
           <div class="feature-list">
             <div class="feature-item">
               <h4>Smart Property Exploration</h4>
               <p>
                 A powerful search system that allows users to filter properties by location,
-                price range, property type, and area size helping them find exactly what they
-                need in seconds.
+                price range, property type, and area size, helping them find exactly what
+                they need in seconds.
               </p>
             </div>
             <div class="feature-item">
               <h4>Detailed and Verified Listings</h4>
               <p>
                 Each property includes high-quality images, full specifications, pricing
-                clarity, and direct agent communication to ensure transparency and trust.
+                clarity, and direct agent communication to support transparency and trust.
               </p>
             </div>
             <div class="feature-item">
               <h4>User Experience (UX)</h4>
               <p>
-                Users can save favorite properties, revisit viewed listings, and navigate
-                smoothly through a clean, modern dark interface designed for comfort.
+                Users can save favorite properties, revisit viewed listings, and move through
+                a calm dark interface designed for comfort, clarity, and speed.
               </p>
             </div>
           </div>
@@ -304,7 +435,7 @@
             </div>
             <a
               class="button button-secondary"
-              href="https://youssif-hy.github.io/AL-Minshawi-Shop/index.html"
+              href="https://github.com/youssif-Hy"
               target="_blank"
               rel="noreferrer"
             >
@@ -316,27 +447,24 @@
               <h4>Hero Section and Visual Hierarchy</h4>
               <p>
                 The home screen immediately highlights featured products and current offers.
-                Large product images, clear typography, and structured spacing guide the
-                user's attention naturally from top to bottom. The design reduces cognitive
-                load and makes browsing effortless.
+                Large product images, clear typography, and deliberate spacing guide the user
+                naturally from top to bottom and make browsing effortless.
               </p>
             </div>
             <div class="feature-item">
               <h4>Smart Product Cards</h4>
               <p>
-                Each product card is designed with high-quality product imagery, clearly
-                visible pricing, short readable product titles, and direct add-to-cart
-                interaction. The UI ensures users can compare products quickly without opening
-                multiple pages.
+                Each card is designed around high-quality product imagery, visible pricing,
+                concise product naming, and direct add-to-cart interaction so users can scan
+                and compare quickly.
               </p>
             </div>
             <div class="feature-item">
               <h4>Navigation and User Flow</h4>
               <p>
                 The layout follows a mobile-first approach with intuitive navigation. Users
-                can seamlessly switch between categories, access their cart, and continue
-                shopping without losing context. Every action is reachable within one or two
-                taps.
+                can move between categories, access their cart, and continue shopping without
+                losing context, keeping every action close and understandable.
               </p>
             </div>
           </div>
@@ -349,19 +477,16 @@
         <div class="contact-copy reveal">
           <div class="section-heading section-heading-left">
             <p class="section-kicker">My Contact</p>
-            <h2>Open to freelance work, collaboration, and full-time opportunities.</h2>
+            <h2>Available for freelance projects, collaboration, and full-time opportunities.</h2>
           </div>
           <p>
-            I'm available for freelance projects, collaborations, and full-time opportunities.
-            Whether you need a modern mobile application, a responsive website, or a
-            structured system solution, I'm ready to contribute with clarity, performance,
-            and precision. Let's turn ideas into scalable digital products.
+            I am available for freelance projects, collaborations, and full-time roles.
+            Whether you need a modern mobile application, a responsive website, or a more
+            structured digital solution, I bring clarity, performance, and disciplined
+            execution to the work.
           </p>
-          <a class="button button-primary"
-            href="mailto:youssif2371@gmail.com?subject=Freelance Project&body=Hello Youssef, I want to discuss a project with you.">
-            Contact Me
-          </a>
-         </div>
+          <a class="button button-primary" href="mailto:youssif2371@gmail.com">Contact Me</a>
+        </div>
 
         <div class="contact-card reveal">
           <ul class="contact-list">
@@ -408,6 +533,24 @@
                 </a>
               </div>
             </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">*</span>
+              <div>
+                <p class="contact-label">Khamsat</p>
+                <a href="https://khamsat.com/" target="_blank" rel="noreferrer">
+                  khamsat.com
+                </a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">*</span>
+              <div>
+                <p class="contact-label">Mostaql</p>
+                <a href="https://mostaql.com/" target="_blank" rel="noreferrer">
+                  mostaql.com
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -422,9 +565,8 @@
       </div>
       <p>
         Thank you for your time and attention. I truly appreciate the opportunity to present
-        my work and share my journey as a developer. I'm always excited to take on new
-        challenges and build impactful digital solutions. Let's create something meaningful
-        together.
+        my work and share my journey as a developer. I am always ready for new challenges and
+        meaningful digital products that deserve careful engineering.
       </p>
     </div>
   </footer>
@@ -432,4 +574,3 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-

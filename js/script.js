@@ -3,8 +3,49 @@ const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const sections = document.querySelectorAll("main section[id]");
 const revealItems = document.querySelectorAll(".reveal");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeToggleText = document.querySelector(".theme-toggle-text");
+const root = document.documentElement;
+const storageKey = "portfolio-theme";
+
+function updateThemeLabel(theme) {
+  if (!themeToggleText) {
+    return;
+  }
+
+  themeToggleText.textContent = theme === "dark" ? "Light" : "Dark";
+}
+
+function applyTheme(theme) {
+  root.setAttribute("data-theme", theme);
+  updateThemeLabel(theme);
+}
+
+function getPreferredTheme() {
+  const storedTheme = localStorage.getItem(storageKey);
+
+  if (storedTheme === "dark" || storedTheme === "light") {
+    return storedTheme;
+  }
+
+  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+}
+
+applyTheme(getPreferredTheme());
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    applyTheme(nextTheme);
+    localStorage.setItem(storageKey, nextTheme);
+  });
+}
 
 function setMenuState(isOpen) {
+  if (!navToggle || !navMenu) {
+    return;
+  }
+
   navToggle.classList.toggle("is-open", isOpen);
   navMenu.classList.toggle("is-open", isOpen);
   navToggle.setAttribute("aria-expanded", String(isOpen));
